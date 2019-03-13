@@ -714,7 +714,9 @@ int dsi_display_cont_splash_config(void *display);
 int dsi_display_get_panel_vfp(void *display,
 	int h_active, int v_active);
 
+#ifdef CONFIG_EXPOSURE_ADJUSTMENT
 struct dsi_display *get_main_display(void);
+#endif
 
 void dsi_display_set_fod_ui(struct dsi_display *display, bool status);
 
